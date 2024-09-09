@@ -421,11 +421,36 @@ plugins:
         url: /music/城南花已开.m4a # audio url
         cover: /images/城南花已开.jpg # audio cover url
         lrc: # audio cover lrc
-#      - name: # audio name
-#        artist: # audio artist
-#        url: # audio url
-#        cover: # audio cover url
-#        lrc: # audio cover lrc
+      - name: 蜃楼 # audio name
+        artist: 周深 # audio artist
+        url: /music/蜃楼.m4a # audio url
+        cover: /images/蜃楼.jpg # audio cover url
+        lrc: # audio cover lrc
+      - name: 一路生花 # audio name
+        artist: 温亦心 # audio artist
+        url: /music/一路生花.mp3 # audio url
+        cover: /images/一路生花.jpg # audio cover url
+        lrc: # audio cover lrc
+      - name: 你曾这样问过 # audio name
+        artist: 周深 # audio artist
+        url: /music/你曾这样问过.mp3 # audio url
+        cover: /images/你曾这样问过.jpg # audio cover url
+        lrc: # audio cover lrc
+      - name: 浮光 # audio name
+        artist: 周深 # audio artist
+        url: /music/浮光.m4a # audio url
+        cover: /images/浮光.jpg # audio cover url
+        lrc: # audio cover lrc
+      - name: 人是_ # audio name
+        artist: 周深 # audio artist
+        url: /music/人是_.m4a # audio url
+        cover: /images/人是_.jpg # audio cover url
+        lrc: # audio cover lrc
+      - name: 未闻花名 # audio name
+        artist: 周深 # audio artist
+        url: /music/未闻花名.m4a # audio url
+        cover: /images/未闻花名.jpg # audio cover url
+        lrc: # audio cover lrc
       # .... you can add more audios here
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
