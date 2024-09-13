@@ -110,7 +110,7 @@ aplayer:
   asset_inject: false
 
 live2d:
-  enable: true
+  enable: false
 
 mathjax:
   tags: none               # or 'ams' or 'all'
