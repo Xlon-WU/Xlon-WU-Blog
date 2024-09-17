@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: redefine
+theme: redefine-new
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -108,9 +108,6 @@ deploy:
 aplayer:
   meting: true
   asset_inject: false
-
-live2d:
-  enable: false
 
 mathjax:
   tags: none               # or 'ams' or 'all'

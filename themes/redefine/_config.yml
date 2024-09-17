@@ -426,15 +426,20 @@ plugins:
         url: /music/蜃楼.m4a # audio url
         cover: /images/蜃楼.jpg # audio cover url
         lrc: # audio cover lrc
+      - name: 你曾这样问过 # audio name
+        artist: 周深 # audio artist
+        url: /music/你曾这样问过.mp3 # audio url
+        cover: /images/你曾这样问过.jpg # audio cover url
+        lrc: # audio cover lrc
       - name: 一路生花 # audio name
         artist: 温亦心 # audio artist
         url: /music/一路生花.mp3 # audio url
         cover: /images/一路生花.jpg # audio cover url
         lrc: # audio cover lrc
-      - name: 你曾这样问过 # audio name
+      - name: 化身孤岛的鲸 # audio name
         artist: 周深 # audio artist
-        url: /music/你曾这样问过.mp3 # audio url
-        cover: /images/你曾这样问过.jpg # audio cover url
+        url: /music/化身孤岛的鲸.m4a # audio url
+        cover: /images/化身孤岛的鲸.jpg # audio cover url
         lrc: # audio cover lrc
       - name: 浮光 # audio name
         artist: 周深 # audio artist
