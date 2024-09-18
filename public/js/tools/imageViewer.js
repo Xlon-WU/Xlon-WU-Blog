@@ -3,27 +3,14 @@ export default function imageViewer() {
   let scale = 1;
   let isMouseDown = false;
   let dragged = false;
-  let currentImgIndex = 0;
+  let currentImgIndex = 0;  
   let lastMouseX = 0;
   let lastMouseY = 0;
   let translateX = 0;
   let translateY = 0;
 
   const maskDom = document.querySelector(".image-viewer-container");
-  if (!maskDom) {
-    console.warn(
-      "Image viewer container not found. Exiting imageViewer function.",
-    );
-    return;
-  }
-
   const targetImg = maskDom.querySelector("img");
-  if (!targetImg) {
-    console.warn(
-      "Target image not found in image viewer container. Exiting imageViewer function.",
-    );
-    return;
-  }
 
   const showHandle = (isShow) => {
     document.body.style.overflow = isShow ? "hidden" : "auto";
@@ -61,7 +48,7 @@ export default function imageViewer() {
     isMouseDown = true;
     lastMouseX = event.clientX;
     lastMouseY = event.clientY;
-    targetImg.style.cursor = "grabbing";
+    targetImg.style.cursor = 'grabbing'; 
   };
 
   let lastTime = 0;
@@ -81,7 +68,7 @@ export default function imageViewer() {
       lastMouseX = event.clientX;
       lastMouseY = event.clientY;
       targetImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-      dragged = true;
+      dragged = true; 
     }
   };
 
@@ -90,7 +77,7 @@ export default function imageViewer() {
       event.stopPropagation();
     }
     isMouseDown = false;
-    targetImg.style.cursor = "grab";
+    targetImg.style.cursor = 'grab'; 
   };
 
   targetImg.addEventListener("wheel", zoomHandle, { passive: false });
@@ -100,7 +87,7 @@ export default function imageViewer() {
   targetImg.addEventListener("mouseleave", dragEndHandle, { passive: false });
 
   maskDom.addEventListener("click", (event) => {
-    if (!dragged) {
+    if (!dragged) { 
       isBigImage = false;
       showHandle(isBigImage);
       scale = 1;
@@ -108,9 +95,9 @@ export default function imageViewer() {
       translateY = 0;
       targetImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
     }
-    dragged = false;
+    dragged = false;  
   });
-
+  
   const imgDoms = document.querySelectorAll(
     ".markdown-body img, .masonry-item img, #shuoshuo-content img",
   );
@@ -128,43 +115,42 @@ export default function imageViewer() {
     }
   };
 
-  if (imgDoms.length > 0) {
-    imgDoms.forEach((img, index) => {
-      img.addEventListener("click", () => {
-        currentImgIndex = index;
-        isBigImage = true;
-        showHandle(isBigImage);
-        targetImg.src = img.src;
-        document.addEventListener("keydown", escapeKeyListener);
-      });
+  imgDoms.forEach((img, index) => { 
+    img.addEventListener("click", () => {
+      currentImgIndex = index;  
+      isBigImage = true;
+      showHandle(isBigImage);
+      targetImg.src = img.src;
+      document.addEventListener("keydown", escapeKeyListener);
     });
+  });
 
-    const handleArrowKeys = (event) => {
-      if (!isBigImage) return;
+  const handleArrowKeys = (event) => {
+    if (!isBigImage) return;  
+  
+    if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
+      currentImgIndex = (currentImgIndex - 1 + imgDoms.length) % imgDoms.length;
+    } else if (event.key === "ArrowDown" || event.key === "ArrowRight") {
+      currentImgIndex = (currentImgIndex + 1) % imgDoms.length;
+    } else {
+      return;
+    }
+  
+    const currentImg = imgDoms[currentImgIndex];
+    let newSrc = currentImg.src;
 
-      if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
-        currentImgIndex =
-          (currentImgIndex - 1 + imgDoms.length) % imgDoms.length;
-      } else if (event.key === "ArrowDown" || event.key === "ArrowRight") {
-        currentImgIndex = (currentImgIndex + 1) % imgDoms.length;
-      } else {
-        return;
-      }
+    if (currentImg.hasAttribute("lazyload")) {
+    newSrc = currentImg.getAttribute("data-src");
+    currentImg.src = newSrc;  
+    currentImg.removeAttribute("lazyload");  
+  }
 
-      const currentImg = imgDoms[currentImgIndex];
-      let newSrc = currentImg.src;
+  targetImg.src = newSrc;
+};
 
-      if (currentImg.hasAttribute("lazyload")) {
-        newSrc = currentImg.getAttribute("data-src");
-        currentImg.src = newSrc;
-        currentImg.removeAttribute("lazyload");
-      }
+  document.addEventListener("keydown", handleArrowKeys); 
 
-      targetImg.src = newSrc;
-    };
-
-    document.addEventListener("keydown", handleArrowKeys);
-  } else {
-    // console.warn("No images found to attach image viewer functionality.");
+  if (!imgDoms.length && maskDom) {
+    maskDom.parentNode.removeChild(maskDom);
   }
 }

@@ -23,9 +23,9 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/Xlon-WU.png
+  favicon: /images/XW.png
   # Site logo
-  logo: /images/Xlon-WU.png
+  logo: /images/XW.png
   # Site avatar
   avatar: /images/Xlon-WU.png
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -121,8 +121,9 @@ home_banner:
   subtitle:
     text: ["Can it be real?","The world is a mirage.","每个人都会囿于自己的执念里。","生命何尝不是从乌有，到乌有。","我们终身住在那蜃楼，怀中一无所有，仍愿一生如梦游。","渺小得如蜉蝣，也仰望着宇宙。","那智慧的天梯从来都没尽头，这刹那的感受却足够算不朽。","人造的天分是否算慧根？克隆的肉身是否有灵魂？","数字的晨昏是否更缤纷？仿生的情人是否更忠贞？","在电幻的荒丘，寻真实的绿洲。","若巨浪已淹没了来路，我是帆亦是舟。","哪怕是微渺的希望，我们依然前行，没有光指引","往前吧，失去吧，不要停留！","让时空消亡我，你无须记得我。","来摧毁我深爱的一切，可仍夺不走我的选择。","弹指间湮灭我，但命运打不败活着。"] # subtitle text, array
     hitokoto:  # 一言配置
-      enable: false # Whether to enable hitokoto
-      api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
+      enable: true # Whether to enable hitokoto
+      show_author: true # Whether to show author
+      api: https://v1.hitokoto.cn?c=i&c=d&c=k # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
     starting_delay: 500 # Start delay (ms)
@@ -436,20 +437,25 @@ plugins:
         url: /music/一路生花.mp3 # audio url
         cover: /images/一路生花.jpg # audio cover url
         lrc: # audio cover lrc
+      - name: 望 # audio name
+        artist: 周深 # audio artist
+        url: /music/望.m4a # audio url
+        cover: /images/望.jpg # audio cover url
+        lrc: # audio cover lrc
       - name: 化身孤岛的鲸 # audio name
         artist: 周深 # audio artist
         url: /music/化身孤岛的鲸.m4a # audio url
         cover: /images/化身孤岛的鲸.jpg # audio cover url
         lrc: # audio cover lrc
-      - name: 浮光 # audio name
-        artist: 周深 # audio artist
-        url: /music/浮光.m4a # audio url
-        cover: /images/浮光.jpg # audio cover url
-        lrc: # audio cover lrc
       - name: 人是_ # audio name
         artist: 周深 # audio artist
         url: /music/人是_.m4a # audio url
         cover: /images/人是_.jpg # audio cover url
+        lrc: # audio cover lrc
+      - name: 浮光 # audio name
+        artist: 周深 # audio artist
+        url: /music/浮光.m4a # audio url
+        cover: /images/浮光.jpg # audio cover url
         lrc: # audio cover lrc
       - name: 未闻花名 # audio name
         artist: 周深 # audio artist
