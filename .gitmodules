@@ -1,6 +1,6 @@
 [submodule ".deploy_git"]
 	path = .deploy_git
-	url = /.deploy_git
+	url = https://github.com/Xlon-WU/Xlon-WU-Blog/blob/main/.deploy_git.git
 [submodule "Xlon-WU-Blog"]
-	path = Xlon-WU-Blog
-	url = /
+	path = 
+	url = https://github.com/Xlon-WU/Xlon-WU-Blog.git
