@@ -5,9 +5,10 @@ tags:
     - 知识
     - 题解
     - 并查集
+    - 原创
 banner: https://api.xsot.cn/bing?jump=true
 mathjax: true
-excerpt: "本文浅显易懂地讲解了如何使用二进制压缩进行状态压缩动态规划，并使用了状态压缩动态规划的方法解决洛谷例题 P10447 最短 Hamilton 路径。"
+excerpt: "并查集的单点删除作为一个很冷门的知识，很多地方讲得或许不是很好，本文将带你学会并查集的单点删除。"
 ---
 
 ## $\mathfrak{1st.}$ 前言

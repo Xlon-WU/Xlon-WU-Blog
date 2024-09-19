@@ -4,6 +4,7 @@ date: 2024-08-27 12:00:00
 tags: 
     - 题解
     - 博弈论
+    - 原创
 mathjax: true
 banner: /img/solution-luogu-p3210-1.png
 ---

@@ -5,6 +5,7 @@ tags:
     - 题解
     - 网络流
     - 费用流
+    - 原创
 mathjax: true
 banner: /img/solution-luogu-p3365-banner.png
 ---

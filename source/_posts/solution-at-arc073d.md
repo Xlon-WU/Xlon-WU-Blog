@@ -5,6 +5,7 @@ tags:
     - 题解
     - 线段树
     - 动态规划
+    - 原创
 mathjax: true
 banner: https://api.xsot.cn/bing?jump=true
 ---
