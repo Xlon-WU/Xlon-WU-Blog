@@ -122,7 +122,7 @@ home_banner:
     hitokoto:  # 一言配置
       enable: true # Whether to enable hitokoto
       show_author: true # Whether to show author
-      api: https://v1.hitokoto.cn?c=i&c=d&c=k # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
+      api: https://v1.hitokoto.cn?c=i # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
     starting_delay: 500 # Start delay (ms)
@@ -189,6 +189,9 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
+    Accelerated site:
+      icon: fa-regular fa-bolt
+      path: https://xlon-wu.pages.dev/
     Archives: 
       path: /archives 
       icon: fa-regular fa-archive # can be empty
@@ -329,7 +332,7 @@ comment:
   # Whether to enable comment
   enable: true
   # Comment system
-  system: waline # waline, gitalk, twikoo, giscus
+  system: giscus # waline, gitalk, twikoo, giscus
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
@@ -354,17 +357,17 @@ comment:
       region: # Twikoo region. can be empty
     # Giscus comment system. See https://giscus.app/
     giscus:
-      repo: # Github repository name e.g. EvanNotFound/hexo-theme-redefine
-      repo_id: # Github repository id
-      category: # Github discussion category
-      category_id: # Github discussion category id
+      repo: Xlon-WU/comment # Github repository name e.g. EvanNotFound/hexo-theme-redefine
+      repo_id: R_kgDOM0WR5A # Github repository id
+      category: Announcements # Github discussion category
+      category_id: DIC_kwDOM0WR5M4Cin-I # Github discussion category id
       mapping: pathname # Which value to use as the unique identifier for the page. e.g. pathname, url, title, og:title. DO NOT USE og:title WITH PJAX ENABLED since pjax will not update og:title when the page changes
       strict: 0 # Whether to enable strict mode. e.g. 0, 1
       reactions_enabled: 1 # Whether to enable reactions. e.g. 0, 1
       emit_metadata: 0 # Whether to emit metadata. e.g. 0, 1
-      lang: en # Giscus language. e.g. en, zh-CN, zh-TW
-      input_position: bottom # Place the comment box above/below the comments. e.g. top, bottom
-      loading: lazy # Load the comments lazily
+      lang: zh-CN # Giscus language. e.g. en, zh-CN, zh-TW
+      input_position: top # Place the comment box above/below the comments. e.g. top, bottom
+      theme: preferred_color_scheme
 # COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
