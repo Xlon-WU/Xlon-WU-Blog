@@ -189,9 +189,11 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    Accelerated site:
+    Mirror site:
       icon: fa-regular fa-bolt
-      path: https://xlon-wu.pages.dev/
+      submenus: 
+        On Cloudflare Pages: https://xlon-wu.pages.dev/
+        On Github Pages: https://xlon-wu.github.io/
     Archives: 
       path: /archives 
       icon: fa-regular fa-archive # can be empty

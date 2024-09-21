@@ -1,10 +1,10 @@
 ---
 title: 【知识】并查集的单点删除 &【题解】SP5150
-date: 2024-9-23-20:30
+date: 2024-9-17 23:20:30
 tags: 
+    - 并查集
     - 知识
     - 题解
-    - 并查集
     - 原创
 banner: https://api.xsot.cn/bing?jump=true
 mathjax: true

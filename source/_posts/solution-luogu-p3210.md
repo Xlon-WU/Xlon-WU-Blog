@@ -2,8 +2,8 @@
 title: 【题解】 P3210 取石头游戏
 date: 2024-08-27 12:00:00
 tags: 
-    - 题解
     - 博弈论
+    - 题解
     - 原创
 mathjax: true
 banner: /img/solution-luogu-p3210-1.png

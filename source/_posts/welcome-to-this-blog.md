@@ -1,7 +1,7 @@
 ---
 title: Welcome to Xlon WU's Blog.
 date: 2024-8-26 15:00:00
-tags: 系统
+tags: 博客公告
 banner: /img/welcome.jpg
 sticky: 100
 ---

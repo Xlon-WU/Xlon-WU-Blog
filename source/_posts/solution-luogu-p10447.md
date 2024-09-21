@@ -2,9 +2,9 @@
 title: 【知识】 状态压缩动态规划 & 【题解】 P10447 最短 Hamilton 路径
 date: 2024-8-28 11:30:00
 tags: 
+    - 动态规划
     - 知识
     - 题解
-    - 动态规划
     - 原创
 banner: https://api.xsot.cn/bing?jump=true
 mathjax: true

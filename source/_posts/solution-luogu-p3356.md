@@ -2,9 +2,9 @@
 title: 【题解】 P3365 火星探险问题
 date: 2024-08-27 12:00:00
 tags: 
-    - 题解
     - 网络流
     - 费用流
+    - 题解
     - 原创
 mathjax: true
 banner: /img/solution-luogu-p3365-banner.png
