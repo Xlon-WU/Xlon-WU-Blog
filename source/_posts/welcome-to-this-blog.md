@@ -1,12 +1,14 @@
 ---
 title: Welcome to Xlon WU's Blog.
 date: 2024-8-26 15:00:00
+categories: 博客公告
 tags: 博客公告
 banner: /img/welcome.jpg
 sticky: 100
 ---
-### **简体中文**
 
+{% tabs first tabs %}
+<!-- tab 简体中文-->
 欢迎来到 青铜_WU 的博客小站。
 
 [点击此处查看博客页面](https://xlon-wu.github.io/)
@@ -18,11 +20,8 @@ sticky: 100
 本站基于 Hexo 博客框架搭建，使用 Redefine 主题，由 GitHub 托管。
 
 [本项目的 GitHub 仓库](https://github.com/Xlon-WU/Xlon-WU.github.io)
-
----
-
-### **English**
-
+<!-- endtab -->
+<!-- tab English-->
 Welcome to Xlon WU's blog.
 
 [Click here to view the blog page.](https://xlon-wu.github.io/)
@@ -34,3 +33,5 @@ I am an OIer from Fujian, China. And you can find me here:
 This site is built on the Hexo blogging framework and uses the Redefine theme, which is hosted on GitHub.
 
 [GitHub repository for this project](https://github.com/Xlon-WU/Xlon-WU.github.io)
+<!-- endtab -->
+{% endtabs %}

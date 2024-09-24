@@ -1,6 +1,10 @@
 ---
 title: 【题解】 AT_arc073_d Many Moves
 date: 2024-09-02 21:00:00
+categories: 
+    - 动态规划
+    - 数据结构优化
+    - 线段树
 tags: 
     - 动态规划
     - 线段树
@@ -57,7 +61,7 @@ $$
 
 ## $\large\mathfrak{3rd.\ Code|}$ 代码
 
-```en
+```cpp
 #include <bits/stdc++.h>
 #define ll long long
 #define FOR(i, l, r) for (ll i = l; i <= r; i++)

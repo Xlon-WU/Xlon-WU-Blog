@@ -1,6 +1,8 @@
 ---
 title: 【题解】 P10153 「LAOI-5」膜你赛
 date: 2024-09-21 19:50:43
+categories: 
+    - 构造
 tags: 
     - 构造
     - 题解

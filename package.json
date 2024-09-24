@@ -25,6 +25,7 @@
     "hexo-server": "^3.0.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-landscape": "^1.0.0",
-    "hexo-theme-redefine": "^2.7.1"
+    "hexo-theme-redefine": "^2.7.1",
+    "node-pre-gyp-github": "^2.0.0"
   }
 }
