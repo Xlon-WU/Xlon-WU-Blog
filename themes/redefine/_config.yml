@@ -188,21 +188,15 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    Mirror site:
+    Mirror Site:
       icon: fa-regular fa-bolt
       submenus: 
         On Netlify(推荐): https://xlon-wu.netlify.app/
         On Github Pages: https://xlon-wu.github.io/
         On Cloudflare Pages: https://xlon-wu.pages.dev/
-    Archives: 
-      path: /archives 
-      icon: fa-regular fa-archive # can be empty
-    # Status: 
-    #   path: https://status.ohevan.com/
-    #   icon: fa-regular fa-chart-bar
-    Tags: 
-      icon: fa-regular fa-tags 
-      path: /tags 
+    Categories: 
+      path: /categories 
+      icon: fa-regular fa-folder 
     About: 
       icon: fa-regular fa-user
       submenus:
