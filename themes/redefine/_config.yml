@@ -173,7 +173,6 @@ home_banner:
 # NAVIGATION BAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/home/navbar
 navbar:
-  
   auto_hide: false
   # Navbar background color
   color:
@@ -192,8 +191,9 @@ navbar:
     Mirror site:
       icon: fa-regular fa-bolt
       submenus: 
-        On Cloudflare Pages: https://xlon-wu.pages.dev/
+        On Netlify(推荐): https://xlon-wu.netlify.app/
         On Github Pages: https://xlon-wu.github.io/
+        On Cloudflare Pages: https://xlon-wu.pages.dev/
     Archives: 
       path: /archives 
       icon: fa-regular fa-archive # can be empty
@@ -201,7 +201,7 @@ navbar:
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
     Tags: 
-      icon: fa-solid fa-tags 
+      icon: fa-regular fa-tags 
       path: /tags 
     About: 
       icon: fa-regular fa-user
@@ -221,7 +221,7 @@ navbar:
   # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
   search:
     # Whether to enable
-    enable: true
+    enable: 
     # Preload search data when the page loads
     preload: true
 # NAVIGATION BAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -241,12 +241,18 @@ home:
       # Archives: 
       #   path: /archives 
       #   icon: fa-regular fa-archive # can be empty
-      Tags: 
+      文章标签: 
         path: /tags 
         icon: fa-regular fa-tags # can be empty
-      Categories: 
+      文章分类: 
         path: /categories 
         icon: fa-regular fa-folder # can be empty
+      文章归档:
+        path: /archives
+        icon: fa-regular fa-archive
+      个人动态:
+        path: /essays
+        icon: fa-regular fa-comments
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
