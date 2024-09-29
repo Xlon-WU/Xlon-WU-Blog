@@ -118,16 +118,16 @@ home_banner:
   title: Xlon WU's Blog
   # Home banner subtitle
   subtitle:
-    text: ["Can it be real?","The world is a mirage.","每个人都会囿于自己的执念里。","生命何尝不是从乌有，到乌有。","我们终身住在那蜃楼，怀中一无所有，仍愿一生如梦游。","渺小得如蜉蝣，也仰望着宇宙。","那智慧的天梯从来都没尽头，这刹那的感受却足够算不朽。","人造的天分是否算慧根？克隆的肉身是否有灵魂？","数字的晨昏是否更缤纷？仿生的情人是否更忠贞？","在电幻的荒丘，寻真实的绿洲。","若巨浪已淹没了来路，我是帆亦是舟。","哪怕是微渺的希望，我们依然前行，没有光指引","往前吧，失去吧，不要停留！","让时空消亡我，你无须记得我。","来摧毁我深爱的一切，可仍夺不走我的选择。","弹指间湮灭我，但命运打不败活着。"] # subtitle text, array
+    text: ["Can it be real?","The world is a mirage.","每个人都会囿于自己的执念里。","生命何尝不是从乌有，到乌有。","我们终身住在那蜃楼，怀中一无所有，仍愿一生如梦游。","渺小得如蜉蝣，也仰望着宇宙。","那智慧的天梯从来都没尽头，这刹那的感受却足够算不朽。","人造的天分是否算慧根？克隆的肉身是否有灵魂？","数字的晨昏是否更缤纷？仿生的情人是否更忠贞？","在电幻的荒丘，寻真实的绿洲。","若巨浪已淹没了来路，我是帆亦是舟。","哪怕是微渺的希望，我们依然前行，没有光指引。","往前吧，失去吧，不要停留！","让时空消亡我，你无须记得我。","来摧毁我深爱的一切，可仍夺不走我的选择。","弹指间湮灭我，但命运打不败活着。"] # subtitle text, array
     hitokoto:  # 一言配置
-      enable: true # Whether to enable hitokoto
+      enable: false # Whether to enable hitokoto
       show_author: true # Whether to show author
       api: https://v1.hitokoto.cn?c=i # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
     starting_delay: 500 # Start delay (ms)
     backing_delay: 1500 # Backing delay (ms)
-    loop: true # Whether to loop
+    loop: false # Whether to loop
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text
   text_color: 
