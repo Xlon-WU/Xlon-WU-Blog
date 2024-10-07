@@ -8,7 +8,7 @@ tags:
     - 题解
     - 原创
 mathjax: true
-banner: https://api.xsot.cn/bing?jump=true
+excerpt: "一道有趣的构造题。"
 ---
 
 ## $\large\mathfrak{1st.\ Preamble|}$ 前言

@@ -11,7 +11,6 @@ tags:
     - 题解
     - 原创
 mathjax: true
-banner: https://api.xsot.cn/bing?jump=true
 ---
 
 ## $\large\mathfrak{1st.\ Preamble|}$ 前言
