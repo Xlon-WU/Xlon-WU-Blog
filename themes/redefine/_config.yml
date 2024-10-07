@@ -14,7 +14,7 @@ info:
   # Author name
   author: Xlon WU
   # Site URL
-  url: https://xlon-wu.github.io
+  url: https://xlon-wu.netlify.app
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -188,15 +188,19 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
+    索引:
+      icon: fa-solid fa-list
+      submenus:
+        文章标签: /tags 
+        文章分类: /categories 
+        文章归档: /archives
+        个人动态: /essays
     Mirror Site:
       icon: fa-regular fa-bolt
       submenus: 
         On Netlify(推荐): https://xlon-wu.netlify.app/
         On Github Pages: https://xlon-wu.github.io/
         On Cloudflare Pages: https://xlon-wu.pages.dev/
-    Categories: 
-      path: /categories 
-      icon: fa-regular fa-folder 
     About: 
       icon: fa-regular fa-user
       submenus:
