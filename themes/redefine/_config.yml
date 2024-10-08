@@ -185,16 +185,15 @@ navbar:
     pages: 1000px #other pages
   # Navbar links
   links:
-    Home: 
-      path: / 
-      icon: fa-regular fa-house # can be empty
     索引:
       icon: fa-solid fa-list
       submenus:
         文章标签: /tags 
         文章分类: /categories 
         文章归档: /archives
-        个人动态: /essays
+    动态: 
+      path: /essays
+      icon: fa-regular fa-message # can be empty
     Mirror Site:
       icon: fa-regular fa-bolt
       submenus: 
